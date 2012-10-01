@@ -2,7 +2,7 @@
 #Configurations injected by install_server below....
 
 EXEC=/opt/redis/bin/redis-server
-CLIEXEC=/opt/redis/bin/redis-cli <%= redis_password ? "-a #{redis_password}" : '' %>
+CLIEXEC="/opt/redis/bin/redis-cli <%= redis_password ? "-a #{redis_password}" : '' %>"
 PIDFILE=/var/run/redis_6379.pid
 CONF="/etc/redis/6379.conf"
 
